@@ -1,0 +1,82 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Break – SeanMcP</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Fira+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Fira Sans";
+      }
+      code,
+      pre {
+        font-family: "Fira Code";
+      }
+      button, input {
+          font-family: inherit;
+          font-size: inherit;
+      }
+      .blue {
+        color: blue;
+      }
+
+      .big {
+        font-size: 150%;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+
+      #trunk {
+        background: hsl(0, 0%, 90%);
+        padding: 1rem;
+      }
+
+      section {
+          border-top: 1px solid hsl(0, 0%, 80%);
+          margin-top: 2rem;
+          padding-top: 2rem;
+      }
+
+      section h2 {
+          margin-top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1><code>DOM</code> Break</h1>
+      <p>Learn to set DOM breakpoints by example</p>
+      <section>
+        <h2>Subtree modification</h2>
+        <p>
+          The browser will break if there child nodes are added or removed from
+          the selected element.
+        </p>
+        <button onclick="addNode()">Add a node</button>
+        <div id="trunk"></div>
+      </section>
+      <section>
+        <h2>Attribute modification</h2>
+        <p>
+          The browser will break when the selected element's attributes are
+          changed.
+        </p>
+        <button onclick="toggle('blue')">Blue</button>
+        <button onclick="toggle('bold')">Bold</button>
+        <button onclick="toggle('big')">Big</button>
+        <button onclick="reset()">Clear</button>
+        <p id="paragraph">Hello there!</p>
+      </section>
+      <section>
+        <h2>Node removal</h2>
+        <p>The browser will break if the selected element in removed.</p>
+      </section>
+    </main>
+  </body>
+  <script src="./main.js"></script>
+</html>
