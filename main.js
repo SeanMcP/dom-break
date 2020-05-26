@@ -1,5 +1,3 @@
-console.info("Made by SeanMcP – https://seanmcp.com");
-
 // Subtree modification
 
 function addNode() {
@@ -20,3 +18,4 @@ function reset() {
 }
 
 // Node removal
+// Use the code for subtree modification

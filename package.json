@@ -1,0 +1,23 @@
+{
+  "name": "dom-break",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeanMcP/dom-break.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeanMcP/dom-break/issues"
+  },
+  "homepage": "https://github.com/SeanMcP/dom-break#readme",
+  "dependencies": {
+    "@seanmcp/demo": "^2.0.2"
+  }
+}

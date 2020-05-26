@@ -2,38 +2,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DOM Break – SeanMcP</title>
+    <title>DOM Break</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Fira+Sans:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./node_modules/@seanmcp/demo/shared.css">
     <style>
-      body {
-        font-family: "Fira Sans";
-      }
-      code,
-      pre {
-        font-family: "Fira Code";
-      }
-      button, input {
-          font-family: inherit;
-          font-size: inherit;
-      }
-      .blue {
-        color: blue;
-      }
+      .blue { color: blue }
+      .big { font-size: 150% }
 
-      .big {
-        font-size: 150%;
-      }
-
-      .bold {
-        font-weight: bold;
-      }
+      .bold { font-weight: bold }
 
       #trunk {
         background: hsl(0, 0%, 90%);
-        padding: 1rem;
       }
 
       section {
@@ -44,6 +26,12 @@
 
       section h2 {
           margin-top: 0;
+      }
+
+      [data-target] {
+        margin-top: 1rem;
+        border: 2px dotted dodgerblue;
+        padding: 0.5rem;
       }
     </style>
   </head>
@@ -58,7 +46,7 @@
           the selected element.
         </p>
         <button onclick="addNode()">Add a node</button>
-        <div id="trunk"></div>
+        <div id="trunk" data-target="true"></div>
       </section>
       <section>
         <h2>Attribute modification</h2>
@@ -70,7 +58,7 @@
         <button onclick="toggle('bold')">Bold</button>
         <button onclick="toggle('big')">Big</button>
         <button onclick="reset()">Clear</button>
-        <p id="paragraph">Hello there!</p>
+        <p id="paragraph" data-target="true">Hello there!</p>
       </section>
       <section>
         <h2>Node removal</h2>
@@ -79,4 +67,5 @@
     </main>
   </body>
   <script src="./main.js"></script>
+  <script src="./node_modules/@seanmcp/demo/shared.js"></script>
 </html>
