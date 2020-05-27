@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/SeanMcP/dom-break#readme",
   "dependencies": {
-    "@seanmcp/demo": "^2.0.2"
+    "@seanmcp/demo": "^2.1.0"
   }
 }
